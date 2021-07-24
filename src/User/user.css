@@ -1,0 +1,44 @@
+.user {
+  margin: 20px 20px;
+  border: 1.5px solid #e0dede;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #e0dede;
+}
+
+/* .user {
+  margin: 20px;
+  border: 1.5px solid #e0dede;
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px #b8b8b852;
+} */
+
+.photo {
+}
+
+.photo img {
+  width: 250px;
+  height: 250px;
+}
+.fas {
+  color: gray;
+  margin: 6px 10px;
+  font-size: 13px;
+}
+.name {
+  font-weight: bold;
+}
+.cart {
+  text-align: center;
+  margin: 12px;
+}
+.btn {
+  width: 100px;
+  padding: 7px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: lightsalmon;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
