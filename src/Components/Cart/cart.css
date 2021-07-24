@@ -1,0 +1,18 @@
+.cart-container {
+  width: 500px;
+  height: 900px;
+  margin-top: 100px;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+.cart-container h2,
+h3 {
+  text-align: center;
+  margin-top: 15px;
+}
+.add {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px;
+}

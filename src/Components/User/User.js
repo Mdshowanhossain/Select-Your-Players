@@ -1,13 +1,9 @@
 import React from 'react';
 import user from './user.css';
-import Users from '../Components/Users/Users';
 
-const User = ({ user }) => {
-    console.log(user)
-    const { firstName, lastName, gender, email, address, image, phone, salary } = user;
-
-
-
+const User = (props) => {
+    // console.log(user)
+    const { firstName, lastName, gender, email, address, image, phone, salary } = props.user;
     return (
         <div className="user">
             <div className="photo">
@@ -19,7 +15,7 @@ const User = ({ user }) => {
                     <p><i className="fas fa-phone-alt" />Phone: {address}</p>
                     <p><i className="fas fa-address-card" />Address: {phone}</p>
                     <p><i className="fas fa-money-bill-alt" />Salary: {salary}</p>
-                    <p className="cart"><button className="btn fas fa-plus"> Cart</button></p>
+                    <p className="cart"><button onClick={() => props.handleAddToCart(props.user)} className="btn"><span className="fas fa-plus"></span> Cart</button></p>
                 </div>
             </div>
         </div>

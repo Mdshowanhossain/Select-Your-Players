@@ -1,0 +1,15 @@
+/* .cartDetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+.cartDetails {
+  text-align: center;
+}
+
+.cartDetails img {
+  width: 100px;
+  height: 100px;
+  border-radius: 90%;
+  margin: 10px 23px;
+}

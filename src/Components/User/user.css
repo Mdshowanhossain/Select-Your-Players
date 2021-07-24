@@ -4,17 +4,6 @@
   border-radius: 5px;
   box-shadow: 10px 10px 10px #e0dede;
 }
-
-/* .user {
-  margin: 20px;
-  border: 1.5px solid #e0dede;
-  border-radius: 4px;
-  box-shadow: 10px 10px 10px #b8b8b852;
-} */
-
-.photo {
-}
-
 .photo img {
   width: 250px;
   height: 250px;
@@ -22,7 +11,7 @@
 .fas {
   color: gray;
   margin: 6px 10px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .name {
   font-weight: bold;
@@ -31,8 +20,12 @@
   text-align: center;
   margin: 12px;
 }
+.btn > span {
+  color: white;
+  margin: 0 0;
+}
 .btn {
-  width: 100px;
+  width: 80px;
   padding: 7px;
   font-size: 18px;
   border: none;
