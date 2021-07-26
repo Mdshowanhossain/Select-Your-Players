@@ -15,7 +15,6 @@ const Users = () => {
         const newUser = [...users, user]
         setUsers(newUser);
     }
-
     return (
 
         <div className="flex">

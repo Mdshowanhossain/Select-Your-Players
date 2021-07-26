@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import user from './user.css';
 
 const User = (props) => {
     // console.log(user)
+    const [active, setDeactive] = useState(false);//setBtnDeactive(true)
+
+
     const { firstName, lastName, gender, email, address, image, phone, salary } = props.user;
     return (
         <div className="user">
@@ -15,13 +18,20 @@ const User = (props) => {
                     <p><i className="fas fa-phone-alt" />Phone: {address}</p>
                     <p><i className="fas fa-address-card" />Address: {phone}</p>
                     <p><i className="fas fa-money-bill-alt" />Salary: {salary}</p>
-                    <p className="cart"><button onClick={() => props.handleAddToCart(props.user)} className="btn"><span className="fas fa-plus"></span> Cart</button></p>
+
+                    <p className="Button"><button onClick={() => {
+                        props.handleAddToCart(props.user); setDeactive(true);
+                    }} className={active ? "disable" : "Button-Class fas fa-plus"}>{active ? "Added" : "ADD"}</button></p>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
 
 
 export default User;
+
+// <p className="cart"><button onClick={() => {
+//     props.handleAddToCart(props.user); setBtnDeactive(true);
+// }} className={btnActive ? "deActive" : "active"}><span className="fas fa-plus"></span> {btnActive ? "Added" : "Add"}</button></p>
