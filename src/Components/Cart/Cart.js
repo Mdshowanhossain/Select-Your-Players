@@ -1,6 +1,5 @@
 import React from 'react';
 import CartDetails from '../CartDetails/CartDetails';
-// import CartDetails from '../CartDetails/CartDetails';
 import cart from './cart.css';
 
 const Cart = (props) => {

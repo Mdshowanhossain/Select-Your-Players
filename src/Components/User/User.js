@@ -3,8 +3,7 @@ import user from './user.css';
 
 const User = (props) => {
     // console.log(user)
-    const [active, setDeactive] = useState(false);//setBtnDeactive(true)
-
+    const [active, setDeactive] = useState(false);
 
     const { firstName, lastName, gender, email, address, image, phone, salary } = props.user;
     return (
@@ -27,11 +26,4 @@ const User = (props) => {
         </div >
     );
 };
-
-
-
 export default User;
-
-// <p className="cart"><button onClick={() => {
-//     props.handleAddToCart(props.user); setBtnDeactive(true);
-// }} className={btnActive ? "deActive" : "active"}><span className="fas fa-plus"></span> {btnActive ? "Added" : "Add"}</button></p>
